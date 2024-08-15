@@ -1,0 +1,243 @@
+@keyframes opacity-anim {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes logo-part-anim {
+    0% {
+        box-shadow: 0px 0px 20px 5px purple;
+    }
+    50% {
+        box-shadow: 0px 0px 25px 15px purple;
+    }
+    100% {
+        box-shadow: 0px 0px 20px 5px purple;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#main-section {
+    user-select: none;
+    font-family: "Oswald";
+    height: 100svh;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#main-logo {
+    max-width: 370px;
+    width: 100vw;
+    height: 70px;
+    background-color: transparent;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+    display: flex;
+    margin: 15px;
+}
+
+#main-logo-part {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(151, 33, 184);
+    border: 8px solid rgb(208, 107, 255);
+    border-radius: 20px;
+    font-style: italic;
+    box-shadow: 0px 0px 20px 10px purple;
+    animation: logo-part-anim 3s infinite;
+}
+
+#main-logo-detail {
+    transform: translate(-55px, -15px);
+    background-color: rgb(208, 107, 255);
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 0px solid black;
+    color: black;
+    border-radius: 8px;
+    height: 30px;
+    width: 50px;
+    font-size: 25px;
+}
+
+#main-section-text-tip{
+    position: absolute;
+    bottom: 5svh;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    color: slategray;
+    border-radius: 10px;
+    animation: opacity-anim 1s infinite;
+}
+
+#section1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(black, purple);
+    padding-bottom: 15px;
+}
+
+.section-title{
+    font-family: "Oswald";
+    font-style: italic;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.generic-content1{
+    max-width: 450px;
+    font-family: "Oswald";
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgb(0,0,0, 0.3);
+    border-radius: 30px;
+    border: 2px solid rgb(151, 33, 184);
+}
+
+.generic-content1 img {
+    width: 25%;
+}
+
+.generic-content1 h2 {
+    font-style: italic;
+    margin-top: 25px;
+    opacity: 0.8;
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.generic-content1 p {
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+#subscription-frame {
+    text-align: center;
+    font-family: "Oswald";
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30vh;
+}
+
+#subscription-frame h2 {
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+#subscription-frame button {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-family: "Oswald";
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+#subscription-frame button:active {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-family: "Oswald";
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px 5px white;
+    transition: box-shadow 0.1s;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+        justify-content: center;
+    }
+    #main-logo {
+        width: 580px;
+        max-width: none;
+        height: 115px;
+        background-color: transparent;
+        font-family: 'Segoe UI';
+        font-size: 50px;
+        display: flex;
+        margin: 15px;
+    }
+    #main-logo-part {
+        border-radius: 25px;
+    }
+    #main-logo-detail {
+        transform: translate(-63.5px, 0px);
+    }
+    #main-section {
+        height: 90vh;
+    }
+    #main-section-text-tip {
+        position: absolute;
+        bottom: 20svh;
+        left: 0;
+        right: 0;
+        font-size: 15px;
+        color: slategray;
+        border-radius: 10px;
+        animation: opacity-anim 1s infinite;
+    }
+    #section1 {
+        display: flex;
+        max-width: 1600px;
+        padding-bottom: 10vh;
+    }
+    .generic-content1{
+        width: 20vw;
+        max-width: 1600px;
+        font-family: "Oswald";
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: transparent;
+        border-radius: 0;
+        border: 0px solid transparent;
+    }
+}

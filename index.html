@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="logo.svg">
+    <link rel="icon" href="images/logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Purplelight HUB</title>
 </head>
@@ -17,21 +17,31 @@
     <!--Código feito por PurpleLight001-->
     <!--Code made by PurpleLight001-->
     <!--Código creado por PurpleLight001-->
-    <header id="navbar">
-        <div id="navbar-logo">
-            <img src="logo.svg" alt="logo">
-            <h1>Purplelight</h1>
-            <h2>HUB</h2>
+    <header>
+        <!--Elementos da barra de navegação-->
+        <div id="navbar">
+            <div id="navbar-logo"> <!--Logo da barra de navegação-->
+                <img src="images/logo.svg" alt="logo">
+                <h1>Purplelight</h1>
+                <h2>HUB</h2>
+            </div>
+            <ul id="navbar-list"> <!--Lista de opções da barra de navegação-->
+                <a href="#catTrending"><li>Em alta</li></a>
+                <a href="#catTech"><li>Tecnologia</li></a>
+                <a href=""><li>Música</li></a>
+                <a href=""><li>Filmes</li></a>
+                <a href=""><li>Jogos</li></a>
+                <a href="plusindex.html"><li>HUB Plus</li></a>
+            </ul>
+            <button id="navbar-mobile-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
         </div>
-        <ul id="navbar-list">
-            <a href="#secondh1"><li>Em alta</li></a>
-            <a href="#firsth1"><li>Tecnologia</li></a>
-            <li>Música</li>
-            <li>Filmes</li>
-            <li>Jogos</li>
-        </ul>
     </header>
-    <div class="top-content" id="main-top">
+    <!--Conteúdo da página abaixo-->
+    <div class="top-content" id="main-top"> <!--Conteúdo em destaque-->
         <div>
             <h1>O que é Linux? (Explicação COMPLETA para iniciantes) - 2023</h1>
             <h2>Diolinux</h2>
@@ -40,35 +50,45 @@
         </div>
         <img src="https://img.youtube.com/vi/K05CssAbQgo/maxresdefault.jpg" alt="">
     </div>
-    <h1 class="main-text-session" id="firsth1">Tecnologia</h1>
-    <section class="contents-tab">
-        <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=N6h4FIr3-Sk&pp=ygUKdGVjbm9sb2dpYQ%3D%3D">
-            <img src="https://img.youtube.com/vi/N6h4FIr3-Sk/maxresdefault.jpg" alt="">
-            <h1 title="Entenda: o que é tecnologia? - TecMundo">Entenda: o que é tecnologia? - TecMundo</h1>
-            <h2>TecMundo</h2>
-        </a>
-        <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=SiFoIFhPS7w">
-            <img src="https://img.youtube.com/vi/SiFoIFhPS7w/maxresdefault.jpg" alt="">
-            <h1 title="MIUI vs HyperOS: ou seria MIUI 14 vs MIUI 15?">MIUI vs HyperOS: ou seria MIUI 14 vs MIUI 15?</h1>
-            <h2>Canaltech</h2>
-        </a>
-        <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=lF60gEoZ1vw">
-            <img src="https://img.youtube.com/vi/lF60gEoZ1vw/maxresdefault.jpg" alt="">
-            <h1 title="CHEGOU MEU NOTEBOOK WHITE LABEL MW INFORMÁTICA, A HORA DA VERDADE">CHEGOU MEU NOTEBOOK WHITE LABEL MW INFORMÁTICA, A HORA DA VERDADE</h1>
-            <h2>MW Informática</h2>
-        </a>
-        <a class="contents-tab-content" target="_blank" href="https://youtu.be/Cx2LlTCWVyk?si=o2eAncPGr6TbJZn5">
-            <img src="https://img.youtube.com/vi/Cx2LlTCWVyk/mqdefault.jpg" alt="">
-            <h1 title="Linux Mint 22 - TUDO sobre a nova versão (incluindo as polêmicas)">Linux Mint 22 - TUDO sobre a nova versão (incluindo as polêmicas)</h1>
-            <h2>Diolinux</h2>
-        </a>
-        <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=6QtKeLRvGpE">
-            <img src="https://img.youtube.com/vi/6QtKeLRvGpE/maxresdefault.jpg" alt="">
-            <h1 title="Windows ganha maior integração com Android no Explorador de Arquivos!! | Windows Insider">Windows ganha maior integração com Android no Explorador de Arquivos!! | Windows Insider</h1>
-            <h2>Canal WINchester</h2>
-        </a>
+    <!--Aba de lista de vídeos-->
+    <div class="main-contents-tab-title" id="catTech"> <!--Título da lista de vídeos-->
+        <h1>Tecnologia</h1>
+    </div>
+    <section class="contents-tab"> <!--Seção de vídeos-->
+        <div class="contents-tab-videos-layer">
+            <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=N6h4FIr3-Sk&pp=ygUKdGVjbm9sb2dpYQ%3D%3D">
+                <img src="https://img.youtube.com/vi/N6h4FIr3-Sk/maxresdefault.jpg" alt="">
+                <h1 title="Entenda: o que é tecnologia? - TecMundo">Entenda: o que é tecnologia? - TecMundo</h1>
+                <h2>TecMundo</h2>
+            </a>
+            <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=SiFoIFhPS7w">
+                <img src="https://img.youtube.com/vi/SiFoIFhPS7w/maxresdefault.jpg" alt="">
+                <h1 title="MIUI vs HyperOS: ou seria MIUI 14 vs MIUI 15?">MIUI vs HyperOS: ou seria MIUI 14 vs MIUI 15?</h1>
+                <h2>Canaltech</h2>
+            </a>
+            <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=lF60gEoZ1vw">
+                <img src="https://img.youtube.com/vi/lF60gEoZ1vw/maxresdefault.jpg" alt="">
+                <h1 title="CHEGOU MEU NOTEBOOK WHITE LABEL MW INFORMÁTICA, A HORA DA VERDADE">CHEGOU MEU NOTEBOOK WHITE LABEL MW INFORMÁTICA, A HORA DA VERDADE</h1>
+                <h2>MW Informática</h2>
+            </a>
+            <a class="contents-tab-content" target="_blank" href="https://youtu.be/Cx2LlTCWVyk?si=o2eAncPGr6TbJZn5">
+                <img src="https://img.youtube.com/vi/Cx2LlTCWVyk/mqdefault.jpg" alt="">
+                <h1 title="Linux Mint 22 - TUDO sobre a nova versão (incluindo as polêmicas)">Linux Mint 22 - TUDO sobre a nova versão (incluindo as polêmicas)</h1>
+                <h2>Diolinux</h2>
+            </a>
+            <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=6QtKeLRvGpE">
+                <img src="https://img.youtube.com/vi/6QtKeLRvGpE/maxresdefault.jpg" alt="">
+                <h1 title="Windows ganha maior integração com Android no Explorador de Arquivos!! | Windows Insider">Windows ganha maior integração com Android no Explorador de Arquivos!! | Windows Insider</h1>
+                <h2>Canal WINchester</h2>
+            </a>
+            <a class="contents-tab-content" target="_blank" href="https://www.youtube.com/watch?v=6QtKeLRvGpE">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1 title="Title">Title</h1>
+                <h2>Channel</h2>
+            </a>
+        </div>
     </section>
-    <div class="top-content" id="secondary-top">
+    <div class="top-content" id="secondary-top"> <!--Conteúdo em destaque-->
         <div>
             <h1>Android 13 Hands-On: Top 5 Features!</h1>
             <h2>Marques Brownlee</h2>
@@ -77,58 +97,98 @@
         </div>
         <img src="https://img.youtube.com/vi/yQThMUn_UmM/maxresdefault.jpg" alt="">
     </div>
-    <h1 class="main-text-session" id="secondh1">Em alta</h1>
-    <section class="contents-tab">
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
-        </div>
-        <div class="contents-tab-content">
-            <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
-            <h1>Title</h1>
-            <h2>Channel</h2>
+    <!--Aba de lista de vídeos-->
+    <div class="main-contents-tab-title" id="catTrending"> <!--Título da lista de vídeos-->
+        <h1>Em Alta</h1>
+    </div>
+    <section class="contents-tab"> <!--Seção de vídeos-->
+        <div class="contents-tab-videos-layer">
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
+            <div class="contents-tab-content">
+                <img src="https://t3.ftcdn.net/jpg/04/70/37/00/360_F_470370030_TxVCOsONUxh659YzwP2wCkX0ijAetDh9.jpg" alt="">
+                <h1>Title</h1>
+                <h2>Channel</h2>
+            </div>
         </div>
     </section>
+    <!--Rodapé da página-->
+    <footer>
+        <div id="footer1"> <!--Primeira parte do rodapé (Logo e opções)-->
+            <div id="footer-logo"> <!--Logo-->
+                <h1>Purplelight</h1>
+                <h2>HUB</h2>
+            </div>
+            <div id="footer-frame-options"> <!--Lista de opções do lado da logo-->
+                <ul id="footer-list">
+                    <li>
+                        <a href="">
+                            <img src="images/info_icon.svg" alt="">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/info_icon.svg" alt="">
+                            Termos de uso
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/info_icon.svg" alt="">
+                            Política de privacidade
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer2"> <!--Créditos do site, parte de baixo do site-->
+            <h1>Desenvolvido inteiramente por <a style="color: rgb(250, 222, 96); text-decoration:underline; font-style: italic;" target="_blank" href="https://github.com/PurpleLight001">Purplelight001</a></h1>
+        </div>
+    </footer>
 </body>
 </html>
+<script src="scripts/index.js"></script>
